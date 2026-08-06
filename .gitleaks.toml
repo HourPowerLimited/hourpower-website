@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Safe patterns"
+paths = [
+  '''.pre-commit-config.yaml''',
+  '''specs/.*''',
+]
