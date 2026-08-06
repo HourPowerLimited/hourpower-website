@@ -5,7 +5,7 @@ export default function Home() {
         Coming Soon
       </h1>
       <p className="text-lg md:text-xl lg:text-2xl text-gray-600 max-w-xl mb-6">
-        Affordable large-scale solar storage, powered by reconditioned EV batteries.
+        High-capacity solar storage, powered by reconditioned EV batteries.
       </p>
       <p className="text-base md:text-lg text-gray-500 max-w-md">
         We&apos;re building something to make serious energy storage accessible to everyone.
