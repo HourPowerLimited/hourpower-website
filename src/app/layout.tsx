@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Hour Power",
-  description: "Affordable large-scale solar storage, powered by reconditioned EV batteries.",
+  description: "High-capacity solar storage, powered by reconditioned EV batteries.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
