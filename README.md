@@ -1,6 +1,6 @@
 # HourPower Website
 
-[![Deploy](https://github.com/HourPowerLimited/hourpower-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/HourPowerLimited/hourpower-website/actions/workflows/deploy.yml)
+[![CI](https://github.com/HourPowerLimited/hourpower-website/actions/workflows/ci.yml/badge.svg)](https://github.com/HourPowerLimited/hourpower-website/actions/workflows/ci.yml) [![Deploy](https://github.com/HourPowerLimited/hourpower-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/HourPowerLimited/hourpower-website/actions/workflows/deploy.yml)
 
 Marketing site for [HourPower](https://hourpowerlimited.github.io/hourpower-website) — high-capacity solar storage powered by reconditioned EV batteries.
 
