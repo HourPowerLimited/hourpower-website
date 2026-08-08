@@ -11,19 +11,22 @@ type Props = {
 
 type ScanState = "scanning" | "found" | "unsupported" | "notfound";
 
+function isBarcodeDetectorSupported() {
+  return "BarcodeDetector" in window;
+}
+
 export default function ScanUpdateModal({ batteries, onUpdate, onClose }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [scanState, setScanState] = useState<ScanState>("scanning");
+  const [scanState, setScanState] = useState<ScanState>(
+    () => (typeof window !== "undefined" && !isBarcodeDetectorSupported() ? "unsupported" : "scanning")
+  );
   const [found, setFound] = useState<BatteryUnit | null>(null);
   const [nextStage, setNextStage] = useState<Stage | "">("");
   const [approver, setApprover] = useState("");
   const streamRef = useRef<MediaStream | null>(null);
 
   useEffect(() => {
-    if (!("BarcodeDetector" in window)) {
-      setScanState("unsupported");
-      return;
-    }
+    if (scanState === "unsupported") return;
 
     navigator.mediaDevices
       .getUserMedia({ video: { facingMode: "environment" } })
@@ -61,7 +64,7 @@ export default function ScanUpdateModal({ batteries, onUpdate, onClose }: Props)
 
     scan();
     return () => { active = false; stopStream(); };
-  }, [batteries]);
+  }, [batteries]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function stopStream() {
     streamRef.current?.getTracks().forEach((t) => t.stop());

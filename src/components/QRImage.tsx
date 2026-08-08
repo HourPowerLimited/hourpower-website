@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import QRCode from "qrcode";
 
 export default function QRImage({ value, size = 128 }: { value: string; size?: number }) {
@@ -13,5 +14,5 @@ export default function QRImage({ value, size = 128 }: { value: string; size?: n
   }, [value, size]);
 
   if (!src) return <div style={{ width: size, height: size }} className="bg-gray-700 rounded animate-pulse" />;
-  return <img src={src} alt={value} width={size} height={size} className="rounded" />;
+  return <Image src={src} alt={value} width={size} height={size} className="rounded" unoptimized />;
 }
