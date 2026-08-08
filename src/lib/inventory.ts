@@ -32,14 +32,14 @@ export type BatteryUnit = {
 };
 
 export const INITIAL_BATTERIES: BatteryUnit[] = [
-  { serial: "HP-0001", supplier: "Renault Recycling EU",     stage: "Ready for Dispatch",  capacityTest: "pass",    healthTest: "pass",    ceCert: "pass",    customer: "Brennan Residence" },
-  { serial: "HP-0002", supplier: "Renault Recycling EU",     stage: "Ready for Dispatch",  capacityTest: "pass",    healthTest: "pass",    ceCert: "pass",    customer: "Murphy Farm" },
-  { serial: "HP-0003", supplier: "VW Group Remarketing",     stage: "CE Certification",    capacityTest: "pass",    healthTest: "pass",    ceCert: "pending", customer: "Murphy Farm" },
-  { serial: "HP-0004", supplier: "VW Group Remarketing",     stage: "Health Test",         capacityTest: "pass",    healthTest: "pending", ceCert: "n/a",     customer: "Fitzgerald Commercial" },
-  { serial: "HP-0005", supplier: "Nissan Battery Recovery",  stage: "Capacity Test",       capacityTest: "pending", healthTest: "n/a",     ceCert: "n/a",     customer: "Unassigned" },
-  { serial: "HP-0006", supplier: "Nissan Battery Recovery",  stage: "Intake & Inspection", capacityTest: "n/a",     healthTest: "n/a",     ceCert: "n/a",     customer: "Unassigned" },
-  { serial: "HP-0007", supplier: "Renault Recycling EU",     stage: "Quarantine",          capacityTest: "pass",    healthTest: "fail",    ceCert: "n/a",     customer: "Unassigned" },
-  { serial: "HP-0008", supplier: "VW Group Remarketing",     stage: "Purchased",           capacityTest: "n/a",     healthTest: "n/a",     ceCert: "n/a",     customer: "Unassigned" },
+  { serial: "BAT-0001", supplier: "Renault Recycling EU",     stage: "Ready for Dispatch",  capacityTest: "pass",    healthTest: "pass",    ceCert: "pass",    customer: "Brennan Residence" },
+  { serial: "BAT-0002", supplier: "Renault Recycling EU",     stage: "Ready for Dispatch",  capacityTest: "pass",    healthTest: "pass",    ceCert: "pass",    customer: "Murphy Farm" },
+  { serial: "BAT-0003", supplier: "VW Group Remarketing",     stage: "CE Certification",    capacityTest: "pass",    healthTest: "pass",    ceCert: "pending", customer: "Murphy Farm" },
+  { serial: "BAT-0004", supplier: "VW Group Remarketing",     stage: "Health Test",         capacityTest: "pass",    healthTest: "pending", ceCert: "n/a",     customer: "Fitzgerald Commercial" },
+  { serial: "BAT-0005", supplier: "Nissan Battery Recovery",  stage: "Capacity Test",       capacityTest: "pending", healthTest: "n/a",     ceCert: "n/a",     customer: "Unassigned" },
+  { serial: "BAT-0006", supplier: "Nissan Battery Recovery",  stage: "Intake & Inspection", capacityTest: "n/a",     healthTest: "n/a",     ceCert: "n/a",     customer: "Unassigned" },
+  { serial: "BAT-0007", supplier: "Renault Recycling EU",     stage: "Quarantine",          capacityTest: "pass",    healthTest: "fail",    ceCert: "n/a",     customer: "Unassigned" },
+  { serial: "BAT-0008", supplier: "VW Group Remarketing",     stage: "Purchased",           capacityTest: "n/a",     healthTest: "n/a",     ceCert: "n/a",     customer: "Unassigned" },
 ];
 
 export function nextStages(current: Stage): Stage[] {

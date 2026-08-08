@@ -45,7 +45,7 @@ export default function ScanUpdateModal({ batteries, onUpdate, onClose }: Props)
       try {
         const results = await detector.detect(videoRef.current);
         for (const r of results) {
-          const match = r.rawValue.match(/serial=(HP-\d+)/);
+          const match = r.rawValue.match(/serial=(BAT-\d+)/);
           if (match) {
             const unit = batteries.find((b) => b.serial === match[1]);
             stopStream();

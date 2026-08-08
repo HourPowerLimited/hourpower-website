@@ -7,7 +7,7 @@ import AddBatteryModal from "@/components/AddBatteryModal";
 import ScanUpdateModal from "@/components/ScanUpdateModal";
 
 function padSerial(n: number) {
-  return `HP-${String(n).padStart(4, "0")}`;
+  return `BAT-${String(n).padStart(4, "0")}`;
 }
 
 export default function InventoryBoard() {
@@ -16,7 +16,7 @@ export default function InventoryBoard() {
   const [showScan, setShowScan] = useState(false);
 
   const maxNum = batteries.reduce((max, b) => {
-    const n = parseInt(b.serial.replace("HP-", ""), 10);
+    const n = parseInt(b.serial.replace("BAT-", ""), 10);
     return n > max ? n : max;
   }, 0);
 

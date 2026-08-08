@@ -68,7 +68,7 @@ Each card in the kanban board shows:
 ## Add Battery Flow
 - "Add Battery" button in the page header
 - Opens a modal overlay
-- Auto-generates the next serial number (e.g. `HP-0051`)
+- Auto-generates the next serial number (e.g. `BAT-0051`)
 - Displays the QR code for that serial number (generated via `qrcode`)
 - Print button — triggers `window.print()` on a print-only section containing the QR code, serial number, and the instruction: *"Print and affix this label to the battery unit before proceeding."*
 - Confirm button adds the unit to the Purchased column in local state
@@ -95,13 +95,13 @@ Each card in the kanban board shows:
 | Serial | Supplier | Stage | Capacity | Health | CE | Customer |
 |---|---|---|---|---|---|---|
 | HP-0001 | Renault Recycling EU | Ready for Dispatch | ✓ | ✓ | ✓ | Brennan Residence |
-| HP-0002 | Renault Recycling EU | Ready for Dispatch | ✓ | ✓ | ✓ | Murphy Farm |
-| HP-0003 | VW Group Remarketing | CE Certification | ✓ | ✓ | pending | Murphy Farm |
-| HP-0004 | VW Group Remarketing | Health Test | ✓ | pending | — | Fitzgerald Commercial |
-| HP-0005 | Nissan Battery Recovery | Capacity Test | pending | — | — | Unassigned |
-| HP-0006 | Nissan Battery Recovery | Intake & Inspection | — | — | — | Unassigned |
-| HP-0007 | Renault Recycling EU | Quarantine | ✓ | ✗ | — | Unassigned |
-| HP-0008 | VW Group Remarketing | Purchased | — | — | — | Unassigned |
+| BAT-0002 | Renault Recycling EU | Ready for Dispatch | ✓ | ✓ | ✓ | Murphy Farm |
+| BAT-0003 | VW Group Remarketing | CE Certification | ✓ | ✓ | pending | Murphy Farm |
+| BAT-0004 | VW Group Remarketing | Health Test | ✓ | pending | — | Fitzgerald Commercial |
+| BAT-0005 | Nissan Battery Recovery | Capacity Test | pending | — | — | Unassigned |
+| BAT-0006 | Nissan Battery Recovery | Intake & Inspection | — | — | — | Unassigned |
+| BAT-0007 | Renault Recycling EU | Quarantine | ✓ | ✗ | — | Unassigned |
+| BAT-0008 | VW Group Remarketing | Purchased | — | — | — | Unassigned |
 
 ---
 
